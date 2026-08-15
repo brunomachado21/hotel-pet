@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Pet - Editar Pet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-body">
+
+    <header class="app-header">
+        <div class="header-logo">
+            <h2>Hotel Pet</h2>
+        </div>
+        <div class="header-user">
+            <a href="editar-perfil.html" class="user-info">
+                <img src="https://via.placeholder.com/40.png?text=Avatar" alt="Avatar do Gerente" class="avatar">
+                <span>João da Silva</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <aside class="app-sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="cadastrar-pet.html" class="active">🐾 Pets</a></li>
+                    <li><a href="usuarios.html">👤 Usuários</a></li>
+                    <li><a href="configuracoes.html">⚙️ Configurações</a></li>
+                    <li><a href="reservas.html">📖 Reservas</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="app-content">
+            <div class="breadcrumb">
+                <span>Home / Pet / Editar Pet</span>
+            </div>
+
+            <div class="panel-card form-panel">
+                <h2>Editar Pet</h2>
+
+                <form action="visualizar-pet.html" method="get">
+                    <div class="form-layout-grid">
+                        <div class="form-fields-col">
+                            <div class="form-group">
+                                <label for="edit-pet-nome">Nome *</label>
+                                <input type="text" id="edit-pet-nome" name="nome" value="Max" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="edit-pet-tipo">Tipo *</label>
+                                <select id="edit-pet-tipo" name="tipo" required>
+                                    <option value="cachorro" selected>Cachorro</option>
+                                    <option value="gato">Gato</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="edit-pet-raca">Raça *</label>
+                                <input type="text" id="edit-pet-raca" name="raca" value="Pastor Alemão" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="edit-pet-tamanho">Tamanho *</label>
+                                <select id="edit-pet-tamanho" name="tamanho" required>
+                                    <option value="pequeno">Pequeno</option>
+                                    <option value="medio">Médio</option>
+                                    <option value="grande" selected>Grande</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-image-col">
+                            <label>Imagem</label>
+                            <div class="image-upload-box placeholder-box">
+                                <img src="https://via.placeholder.com/150.png?text=Max" alt="Foto Max">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">💾 Salvar</button>
+                        <button type="reset" class="btn btn-outline">🔄 Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Pet - Reserva Finalizada (Gerente)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-body">
+
+    <header class="app-header">
+        <div class="header-logo">
+            <h2>Hotel Pet</h2>
+        </div>
+        <div class="header-user">
+            <a href="editar-perfil.html" class="user-info">
+                <img src="https://via.placeholder.com/40.png?text=Avatar" alt="Avatar do Gerente" class="avatar">
+                <span>João da Silva</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <aside class="app-sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="cadastrar-pet.html">🐾 Pet</a></li>
+                    <li><a href="usuarios.html">👤 Usuários</a></li>
+                    <li><a href="configuracoes.html">⚙️ Configurações</a></li>
+                    <li><a href="reservas.html" class="active">📖 Reservas</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="app-content">
+            <div class="breadcrumb">
+                <span>Home / revervas / editar reserva</span>
+            </div>
+
+            <div class="panel-card form-panel">
+                <h2>Editar reserva</h2>
+
+                <form action="reservas.html" method="get">
+                    <div class="form-group">
+                        <label for="fin-prop">Proprietário *</label>
+                        <input type="text" id="fin-prop" value="José da Silva" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fin-pet">Pet *</label>
+                        <input type="text" id="fin-pet" value="Max" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Período *</label>
+                        <div class="date-range">
+                            <input type="date" value="2021-05-02" required>
+                            <input type="date" value="2021-05-07" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fin-notas">Notas</label>
+                        <textarea id="fin-notas" rows="3">Lorem ipsum dolor sit amet, consectet ui i iadipiscing elit.</textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fin-status">Status*</label>
+                        <select id="fin-status" required>
+                            <option value="finalizada" selected>Finalizada</option>
+                            <option value="em-andamento">Em andamento</option>
+                            <option value="reservado">Reservado</option>
+                            <option value="cancelado">Cancelado</option>
+                        </select>
+                    </div>
+
+                    <div class="total-diarias">
+                        <span>Total das diárias: </span>
+                        <strong class="text-blue">R$ 40,00</strong>
+                    </div>
+
+                    <div class="receipt-section">
+                        <button type="button" class="btn btn-purple">💾 Adicionar nota Fiscal</button>
+                        <div class="receipt-file">
+                            <a href="#" class="link-file">📎 recibo.pdf</a>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">💾 Salvar</button>
+                        <button type="reset" class="btn btn-outline">🔄 Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

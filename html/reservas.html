@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Pet - Painel de Reservas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-body">
+
+    <header class="app-header">
+        <div class="header-logo">
+            <h2>Hotel Pet</h2>
+        </div>
+        <div class="header-user">
+            <a href="editar-perfil.html" class="user-info">
+                <img src="https://via.placeholder.com/40.png?text=Avatar" alt="Avatar do Gerente" class="avatar">
+                <span>João da Silva</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <aside class="app-sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="cadastrar-pet.html">🐾 Pet</a></li>
+                    <li><a href="usuarios.html">👤 Usuários</a></li>
+                    <li><a href="configuracoes.html">⚙️ Configurações</a></li>
+                    <li><a href="reservas.html" class="active">📖 Reservas</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="app-content">
+            <div class="breadcrumb">
+                <span>Home / Reservas</span>
+            </div>
+
+            <div class="panel-card">
+                <div class="panel-header">
+                    <h2>Reservas</h2>
+                    <div class="action-buttons">
+                        <a href="fazer-reserva.html" class="btn btn-outline">＋ Nova reserva</a>
+                    </div>
+                </div>
+
+                <form class="filter-box">
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label for="res-id">Id</label>
+                            <input type="text" id="res-id">
+                        </div>
+                        <div class="form-group col">
+                            <label>período</label>
+                            <div class="date-range">
+                                <input type="date">
+                                <input type="date">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label for="res-proprietario">proprietário</label>
+                            <input type="text" id="res-proprietario">
+                        </div>
+                        <div class="form-group col">
+                            <label>Total</label>
+                            <div class="range-inputs">
+                                <input type="text" placeholder="R$ 0,00">
+                                <input type="text" placeholder="R$ 0,00">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label for="res-status">status</label>
+                            <select id="res-status">
+                                <option value="">Todos</option>
+                                <option value="reservada">Reservada</option>
+                                <option value="em-progresso">Em progresso</option>
+                                <option value="finalizada">Finalizada</option>
+                            </select>
+                        </div>
+                        <div class="form-group col">
+                            <label for="res-pet">pet</label>
+                            <input type="text" id="res-pet">
+                        </div>
+                    </div>
+
+                    <div class="filter-actions">
+                        <button type="submit" class="btn btn-primary">🔍 Pesquisar</button>
+                        <button type="reset" class="btn btn-outline">🔄 Limpar</button>
+                    </div>
+                </form>
+
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Id ↓</th>
+                                <th>Pet ↓</th>
+                                <th>chegada ↓</th>
+                                <th>partida ↓</th>
+                                <th>status ↓</th>
+                                <th>total ↓</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" checked></td>
+                                <td>12349984501</td>
+                                <td>max</td>
+                                <td>02/05/2021</td>
+                                <td>07/05/2020</td>
+                                <td><span class="badge badge-outline-success">Reservada</span></td>
+                                <td>R$ 40,00</td>
+                                <td>
+                                    <a href="editar-reserva.html" class="action-link">Editar</a>
+                                    <a href="ver-reserva.html" class="action-link">Visualizar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>12349984501</td>
+                                <td>ginger</td>
+                                <td>02/05/2021</td>
+                                <td>07/05/2020</td>
+                                <td><span class="badge badge-outline-success">Em progresso</span></td>
+                                <td>R$ 40,00</td>
+                                <td>
+                                    <a href="editar-reserva-andamento.html" class="action-link">Editar</a>
+                                    <a href="ver-reserva.html" class="action-link">Visualizar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>12349984501</td>
+                                <td>max</td>
+                                <td>02/05/2021</td>
+                                <td>07/05/2020</td>
+                                <td><span class="badge badge-outline-primary">Finalizada</span></td>
+                                <td>R$ 40,00</td>
+                                <td>
+                                    <a href="editar-reserva-finalizada.html" class="action-link">Editar</a>
+                                    <a href="ver-reserva.html" class="action-link">Visualizar</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

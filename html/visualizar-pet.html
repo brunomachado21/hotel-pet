@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Pet - Visualizar Pet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-body">
+
+    <header class="app-header">
+        <div class="header-logo">
+            <h2>Hotel Pet</h2>
+        </div>
+        <div class="header-user">
+            <a href="editar-perfil.html" class="user-info">
+                <img src="https://via.placeholder.com/40.png?text=Avatar" alt="Avatar do Gerente" class="avatar">
+                <span>João da Silva</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <aside class="app-sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="cadastrar-pet.html" class="active">🐾 Pets</a></li>
+                    <li><a href="usuarios.html">👤 Usuários</a></li>
+                    <li><a href="configuracoes.html">⚙️ Configurações</a></li>
+                    <li><a href="reservas.html">📖 Reservas</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="app-content">
+            <div class="breadcrumb">
+                <span>Home / pets / ver pet</span>
+            </div>
+
+            <div class="panel-card details-panel">
+                <div class="details-header">
+                    <h2>Ver pet</h2>
+                    <div class="action-buttons">
+                        <a href="editar-pet.html" class="btn btn-outline">✏️ Editar</a>
+                        <button type="button" class="btn btn-outline">🗑️ Deletar</button>
+                    </div>
+                </div>
+
+                <div class="details-list">
+                    <div class="detail-row">
+                        <span class="detail-label">Proprietário:</span>
+                        <span class="detail-value">José da Silva</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Id:</span>
+                        <span class="detail-value">1234509876</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Nome:</span>
+                        <span class="detail-value">Max</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Tipo:</span>
+                        <span class="detail-value">Cachorro</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Raça:</span>
+                        <span class="detail-value">Pastor Alemão</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Imagem</span>
+                        <div class="image-box">
+                            <img src="https://via.placeholder.com/100.png?text=Max" alt="Foto do Max">
+                        </div>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Reservas:</span>
+                        <div class="detail-history">
+                            <p class="text-blue">02/05/2021 - 07/05/2021 (completa)</p>
+                            <p class="text-green">02/05/2021 - 07/05/2021 (em andamento)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <a href="reservas.html" class="btn btn-outline">← Voltar</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

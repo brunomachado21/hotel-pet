@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Pet - Novo Pet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-body">
+
+    <header class="app-header">
+        <div class="header-logo">
+            <h2>Hotel Pet</h2>
+        </div>
+        <div class="header-user">
+            <a href="editar-perfil.html" class="user-info">
+                <img src="https://via.placeholder.com/40.png?text=Avatar" alt="Avatar do Gerente" class="avatar">
+                <span>João da Silva</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <aside class="app-sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="cadastrar-pet.html" class="active">🐾 Pet</a></li>
+                    <li><a href="usuarios.html">👤 Usuários</a></li>
+                    <li><a href="configuracoes.html">⚙️ Configurações</a></li>
+                    <li><a href="reservas.html">📖 Reservas</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="app-content">
+            <div class="breadcrumb">
+                <span>Home / Pet / Novo Pet</span>
+            </div>
+
+            <div class="panel-card form-panel">
+                <h2>Novo Pet</h2>
+
+                <form action="visualizar-pet.html" method="get">
+                    <div class="form-layout-grid">
+                        <div class="form-fields-col">
+                            <div class="form-group">
+                                <label for="pet-proprietario">Proprietário *</label>
+                                <input type="text" id="pet-proprietario" name="proprietario" placeholder="Digite o nome do cliente" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pet-nome">Nome *</label>
+                                <input type="text" id="pet-nome" name="nome" placeholder="Nome do pet" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pet-tipo">Tipo *</label>
+                                <select id="pet-tipo" name="tipo" required>
+                                    <option value="">Selecione o tipo</option>
+                                    <option value="cachorro">Cachorro</option>
+                                    <option value="gato">Gato</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pet-raca">Raça *</label>
+                                <input type="text" id="pet-raca" name="raca" placeholder="Raça do animal" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pet-tamanho">Tamanho *</label>
+                                <select id="pet-tamanho" name="tamanho" required>
+                                    <option value="">Selecione o porte</option>
+                                    <option value="pequeno">Pequeno</option>
+                                    <option value="medio">Médio</option>
+                                    <option value="grande">Grande</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-image-col">
+                            <label>Imagem</label>
+                            <div class="image-upload-box placeholder-box">
+                                <img src="https://via.placeholder.com/150.png?text=Foto+do+Pet" alt="Preview Imagem Pet">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">💾 Salvar</button>
+                        <button type="reset" class="btn btn-outline">🔄 Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
