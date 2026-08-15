@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Pet - Configurações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-body">
+
+    <header class="app-header">
+        <div class="header-logo">
+            <h2>Hotel Pet</h2>
+        </div>
+        <div class="header-user">
+            <a href="editar-perfil.html" class="user-info">
+                <img src="https://via.placeholder.com/40.png?text=Avatar" alt="Avatar do Gerente" class="avatar">
+                <span>João da Silva</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <aside class="app-sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="cadastrar-pet.html">🐾 Pet</a></li>
+                    <li><a href="usuarios.html">👤 Usuários</a></li>
+                    <li><a href="configuracoes.html" class="active">⚙️ Configurações</a></li>
+                    <li><a href="reservas.html">📖 Reservas</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="app-content">
+            <div class="breadcrumb">
+                <span>Home / Configurações</span>
+            </div>
+
+            <div class="panel-card form-panel">
+                <h2>Configurações</h2>
+
+                <form action="configuracoes.html" method="get">
+                    <div class="form-group">
+                        <label for="valor-diaria">Valor da diária</label>
+                        <input type="text" id="valor-diaria" name="valor-diaria" value="R$ 10,00" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="vagas-disponiveis">Vagas disponíveis</label>
+                        <input type="number" id="vagas-disponiveis" name="vagas-disponiveis" value="3" required>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">💾 Salvar</button>
+                        <button type="reset" class="btn btn-outline">🔄 Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

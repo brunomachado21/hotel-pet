@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Pet - Novo Usuário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-body">
+
+    <header class="app-header">
+        <div class="header-logo">
+            <h2>Hotel Pet</h2>
+        </div>
+        <div class="header-user">
+            <a href="editar-perfil.html" class="user-info">
+                <img src="https://via.placeholder.com/40.png?text=Avatar" alt="Avatar do Gerente" class="avatar">
+                <span>João da Silva</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <aside class="app-sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="cadastrar-pet.html">🐾 Pet</a></li>
+                    <li><a href="usuarios.html" class="active">👤 Usuários</a></li>
+                    <li><a href="configuracoes.html">⚙️ Configurações</a></li>
+                    <li><a href="reservas.html">📖 Reservas</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="app-content">
+            <div class="breadcrumb">
+                <span>Home / Usuário / Novo usuário</span>
+            </div>
+
+            <div class="panel-card form-panel">
+                <h2>Editar Perfil</h2>
+
+                <form action="usuarios.html" method="get">
+                    <div class="form-group">
+                        <label for="novo-email">Email *</label>
+                        <input type="email" id="novo-email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="novo-nome">Nome *</label>
+                        <input type="text" id="novo-nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="novo-sobrenome">Sobrenome</label>
+                        <input type="text" id="novo-sobrenome">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="novo-tel">Telefone *</label>
+                        <input type="tel" id="novo-tel" placeholder="+55 (73) 99876-8943" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="novo-funcao">Função</label>
+                        <select id="novo-funcao">
+                            <option value="funcionario">Funcionário</option>
+                            <option value="cliente">Cliente</option>
+                            <option value="gerente">Gerente</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Foto de Perfil</label>
+                        <div class="image-upload-box">
+                            <img src="https://via.placeholder.com/100.png?text=Foto" alt="Placeholder Foto">
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">💾 Salvar</button>
+                        <button type="reset" class="btn btn-outline">🔄 Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
